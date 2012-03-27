@@ -1,0 +1,1 @@
+open_terminal.vba: call delete('/home/qz757/.vim/plugin/open_terminal.vim')|call delete('/home/qz757/.vim/doc/open_terminal.txt')
