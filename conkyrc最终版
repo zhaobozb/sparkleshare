@@ -76,9 +76,12 @@ ${color 3399FF}${goto 125}Net
 #${image ~/.conky/logo.png -p 74,123 -s 50x50}
 ${image ~/blacktocat.png -p 74,123 -s 50x50}
 
-
+${color 3399FF}Highest CPU${color}     ${alignc}${color #87CEEB}CPU%${color}${color #2E8B57}${alignr}MEM%${color}
+${color 3399FF}${top name 1}${color}${alignc}${color #87CEEB}${top cpu 1}${color}${color #2E8B57}${alignr}${top mem 1}${color}
+${color 3399FF}${top name 2}${color}${alignc}${color #87CEEB}${top cpu 2}${color}${color #2E8B57}${alignr}${top mem 2}${color}
+${color 3399FF}${top name 3}${color}${alignc}${color #87CEEB}${top cpu 3}${color}${color #2E8B57}${alignr}${top mem 3}${color}
 #音乐播放器
 ${if_running audacious}
 ${color 3399FF}${font AR PL UKai CN:style=Bold:pixelsize=17}AUD:${color #C0C8CD} ${exec audtool --current-song | cut -b-34}
-${color #C0C8CD}${exec audtool --current-song-bitrate-kbps} kbps * ${exec audtool --current-song-length} ${execbar expr 100 \* $(audtool --current-song-output-length-seconds) \/ $(audtool --current-song-length-seconds)}
+${color #C0C8CD}${exec audtool --current-song-bitrate-kbps} kbps  ${exec audtool --current-song-length} ${execbar expr 100 \* $(audtool --current-song-output-length-seconds) \/ $(audtool --current-song-length-seconds)}
 
