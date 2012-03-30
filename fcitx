@@ -1,0 +1,4 @@
+export XMODIFIERS="@im=fcitx"
+export QT_IM_MODULE=xim
+export GTK_IM_MODULE=xim
+添加到.bashrc中
